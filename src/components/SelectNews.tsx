@@ -56,7 +56,7 @@ const SelectNews = () => {
   const GetData = async () => {
     console.log("Getting data for:", selectedGenre);
     try {
-      const response = await axios.post("http://127.0.0.1:3000/getLink", {
+      const response = await axios.post("https://ws-golang-back.onrender.com/getLink", {
         url: `https://www.thehindu.com/${selectedGenre}/feeder/default.rss`,
       });
       
